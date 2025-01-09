@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div id="survey-container">
+            <h1 id="title">Course Feedback Form</h1>
+            <p id="description">Please fill out this form to share your feedback!</p>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" placeholder="Enter your age" min="10" max="99" required>
+                <label for="dropdown">Which option best describes you?</label>
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                </select>
+                <p>How did you hear about us?</p>
+                <label><input type="radio" name="source" value="social-media"> Social Media</label>
+                <label><input type="radio" name="source" value="friend">Friend</label>
+                <p>What are you interested in ?</p>
+                <input type="checkbox" name="interest" value="coding">Coding<br>
+                <input type="checkbox" name="interest" value="design">Design<br>
+                <label for="comments">Any additional comments?</label>
+                <textarea id="comments" rows="4" placeholder="Enter your comments here"></textarea>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
